@@ -101,7 +101,7 @@ export default class Megoldás {
 
     public kiiratas(forrás: string) {
         let tomb: string[] = [];
-        tomb = fs.readFileSync(forrás).toString().split("\n");
+        tomb = fs.readFileSync(forrás).toString().trim().split("\n");
         return tomb;
     }
 }
